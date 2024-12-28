@@ -1,0 +1,26 @@
+import pandas as pd
+import numpy as np
+
+# Load the dataset
+data = pd.read_csv('D:/codtech projects/EDA_Project/data/Iris.csv')
+
+# Display first 5 rows
+print("Dataset Head:\n", data.head())
+
+# Basic info
+print("\nDataset Info:")
+data.info()
+
+# Check for missing values
+print("\nMissing Values:\n", data.isnull().sum())
+
+# Check for duplicates
+duplicates = data.duplicated().sum()
+print("\nNumber of Duplicate Rows:", duplicates)
+
+# Drop duplicates if any
+if duplicates > 0:
+    data = data.drop_duplicates()
+
+data.to_csv('D:/codtech projects/EDA_Project/data/cleaned_data.csv', index=False)
+print("Cleaned data saved to ../data/cleaned_data.csv")
