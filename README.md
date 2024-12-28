@@ -1,3 +1,10 @@
+Name: Paarth Auti
+Company: CODTECH IT SOLUTIONS
+ID: CT12FCJ
+Domain: Data Analytics
+Duration: Dec 2024 to Feb 2025
+Mentor: SRAVANI GOUNI
+
 **Overview of the Project**
 **Project**: Exploratory Data Analysis (EDA) on Iris Dataset
 
